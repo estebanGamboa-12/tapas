@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/spacing">
 
-        <TextView
+        <ImageView
             android:id="@+id/image"
             android:layout_width="0dp"
             android:layout_height="@dimen/height_image_list"
@@ -24,9 +24,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:background="@drawable/ic_launcher_background"
+
             />
         <TextView
+            android:id="@+id/numero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
@@ -73,6 +74,7 @@
             >
         </TextView>
         <TextView
+            android:id="@+id/media"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toEndOf="@id/total"
@@ -86,15 +88,16 @@
             android:id="@+id/compartir"
             android:layout_width="25dp"
             android:layout_height="50dp"
-            android:src="@drawable/iconfinder_share_4661629_122485"
+
             app:layout_constraintEnd_toEndOf="@id/parrafo1"
             app:layout_constraintTop_toBottomOf="@id/parrafo1"
             >
         </ImageView>
         <ImageView
+            android:id="@+id/like"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/png_clipart_new_likes_facebook_love_icon_thumbnail"
+
             app:layout_constraintEnd_toEndOf="@id/parrafo1"
             app:layout_constraintTop_toBottomOf="@id/parrafo1"
             app:layout_constraintEnd_toStartOf="@id/compartir"

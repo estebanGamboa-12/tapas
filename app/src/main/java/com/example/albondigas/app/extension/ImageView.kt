@@ -1,8 +1,10 @@
-package com.iesam.androidviews.app.extension
+package com.example.albondigas.app.extension
 
+import android.media.Image
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 
-fun ImageView.loadUrl(url: String) {
+
+fun ImageView.load(url:String){
     Glide.with(this.context).load(url).into(this)
 }
