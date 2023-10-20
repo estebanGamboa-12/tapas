@@ -19,7 +19,7 @@ class TapasLocalDataSource (
     fun getTapas():Either<ErrorApp,Tapas>{
         val jsonTapas=sharedPref.getString(tapasId,null)
         jsonTapas?.let {
-            return  serialization.fromJson(it,Tapas::class.java).right()
+            return serialization.fromJson(it,Tapas::class.java).right()
         }
         return  ErrorApp.DataError.left()
     }
