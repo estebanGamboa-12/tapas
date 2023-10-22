@@ -14,7 +14,7 @@ class TapasLocalDataSource (
         ){
 
     private val sharedPref= context.getSharedPreferences("tapas",Context.MODE_PRIVATE )
-    private val tapasId="1";
+    private val tapasId="2";
 
     fun getTapas():Either<ErrorApp,Tapas>{
         val jsonTapas=sharedPref.getString(tapasId,null)

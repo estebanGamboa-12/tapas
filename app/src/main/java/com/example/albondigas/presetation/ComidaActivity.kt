@@ -94,10 +94,10 @@ class ComidaActivity : AppCompatActivity() {
 
     private fun bindData(tapas: Tapas) {
         binding.apply {
-            image.load(tapas.urlImage)
-            parrafo1.text = tapas.title
-            numero.text = tapas.number
-            parrafo2.text = tapas.description
+            urlImage.load(tapas.urlImage)
+            title.text=tapas.title
+            number.text=tapas.number
+            description.text = tapas.description
             total.text = tapas.total
             media.text = tapas.media
             compartir.load(tapas.urlCompartir)
